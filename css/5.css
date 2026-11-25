@@ -107,6 +107,7 @@ p
     top:0;
     background:#f67c92;
     z-index:2;
+    transition: right 0.5s ease;
 }
 
 nav ul li
@@ -126,14 +127,55 @@ nav ul li a
     width:50px;
     position:fixed;
     right:65px;
-    top:35;
+    top:35px;
     z-index: 2;
     cursor: pointer;
 
 }
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
+@media screen and (max-width: 770px)
+{
+    #header
+    {
+        background-image: none;
+        height: auto;
+        min-height: 100vh;
+    }
 
+    .container
+    {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .logo
+    {
+        margin-top: 27px;
+        width: 70px;
+    }
+
+    .header-text
+    {
+        margin-top: 100px;
+    }
+
+    h1
+    {
+        font-size: 25px;
+    }
+
+    #menuBtn
+    {
+        width: 40px;
+        right: 25px;
+    }
+
+    .common-btn
+    {
+        padding: 10px 16px;
+    }
+}
 
 
 
