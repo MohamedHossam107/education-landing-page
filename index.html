@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Landing Page</title>
     <link rel="stylesheet" href="css/5.css">
 </head>
 
@@ -10,14 +12,14 @@
 
     <section id="header">
         <div class="container">
-            <img src="/images/logo.png" class="logo">
+            <img src="./images/logo.png" class="logo" alt="Logo">
             <div class="header-text">
-                <h1>the purpose is to<br> teach, bring learning to peaple</h1>
+                <h1>Our purpose is to teach<br> and bring learning to people</h1>
                 <span class="square"></span>
                 <p>
-                    there are many variatin of passages of lorem ipsum avaible , but the majority have suffered
-                    alteration in some form , by injected humour , or randomised words which dont look even slightly
-                    believable.
+                    Discover new opportunities to learn, develop your skills,
+                    and expand your knowledge through accessible education
+                    designed for everyone.
                 </p>
                 <button class="common-btn">Read More</button>
                 <div class="line">
@@ -40,12 +42,22 @@
         </ul>
     </nav>
     
-    <img src=".//images/menu.png" id="menuBtn">
+    <img src="./images/menu.png" id="menuBtn" alt="Menu">
 
-    <script>
-        var menuBtn = document.getElementById("menuBtn");
-        var sideNav = document.getElementById("sideNav");
-    </script>
+<script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+
+    sideNav.style.right = "-250px";
+
+    menuBtn.onclick = function () {
+        if (sideNav.style.right === "-250px") {
+            sideNav.style.right = "0";
+        } else {
+            sideNav.style.right = "-250px";
+        }
+    };
+</script>
 
 </body>
 
